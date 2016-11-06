@@ -13,7 +13,7 @@ public class ejemploSumaResta {
 		System.out.println("Ingrese B: ");
 		b=scnIngreso.nextInt();
 		
-		System.out.println("ESCOJA OPCIÓN: \n 1 --> SUMA\n 2 --> RESTA\n 3 --> MULTIPLICA\n 4 --> DIVIDE");
+		System.out.println("ESCOJA OPCIÓN: \n 1 --> SUMA\n 2 --> RESTA\n 3 --> MULTIPLICA\n 4 --> DIVIDE\n 5 --> POTENCIACION (A^B)");
 		
 		opcion=scnIngreso.nextInt();
 		
@@ -29,6 +29,10 @@ public class ejemploSumaResta {
 			break;
 		case 4:
 			r=(a/b);
+			break;
+			
+		case 5:
+			r= Math.pow(a, b);
 			break;
 			
 		default:
