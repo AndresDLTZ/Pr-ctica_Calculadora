@@ -13,7 +13,7 @@ public class ejemploSumaResta {
 		System.out.println("Ingrese B: ");
 		b=scnIngreso.nextInt();
 		
-		System.out.println("ESCOJA OPCIÓN: \n 1 --> SUMA\n 2 --> RESTA\n 3 --> MULTIPLICA\n 4 --> DIVIDE\n 5 --> POTENCIACION (A^B)");
+		System.out.println("ESCOJA OPCIÓN: \n 1 --> SUMA\n 2 --> RESTA\n 3 --> MULTIPLICA\n 4 --> DIVIDE\n 5 --> POTENCIACION (A^B)\n 6 --> SIN(radianes)\n 7 --> COS(radianes)");
 		
 		opcion=scnIngreso.nextInt();
 		
@@ -34,7 +34,15 @@ public class ejemploSumaResta {
 		case 5:
 			r= Math.pow(a, b);
 			break;
-			
+
+		case 6:
+			r= Math.sin(a);
+			break;
+
+		case 7:
+			r= Math.cos(a);
+			break;	
+
 		default:
 			System.out.println("\n \t NO SE RECONOCE LA OPCION");
 		
