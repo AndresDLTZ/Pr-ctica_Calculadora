@@ -36,16 +36,8 @@ public class Calculadora {
 			break;
 			
 		case 6:
-			switch((int)b){
-			case 2:
-				r= Math.sqrt(a);
-				break;
-				
-			case 3: 
-				r=Math.pow(a, (1.0/b)); 
-				break;
-			}
-		
+			//RADICACION EN GENERAL
+			r=Math.pow(a, (1.0/b)); 
 			break;
 			
 		default:
