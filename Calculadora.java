@@ -1,10 +1,9 @@
-package ejemploSumaResta;
 
 import java.util.Scanner;
-public class ejemploSumaResta {
+public class Calculadora {
 	public static void main(String[] args) {
 		Scanner scnIngreso = new Scanner(System.in);
-		double a=0, b=0;
+		double a=0.0, b=0.0;
 		int opcion=0;
 		double r=0.0;
 		
@@ -13,7 +12,8 @@ public class ejemploSumaResta {
 		System.out.println("Ingrese B: ");
 		b=scnIngreso.nextInt();
 		
-		System.out.println("ESCOJA OPCIÓN: \n 1 --> SUMA\n 2 --> RESTA\n 3 --> MULTIPLICA\n 4 --> DIVIDE\n 5 --> POTENCIACION (A^B)");
+		System.out.println("ESCOJA OPCIÓN: \n 1 --> SUMA\n 2 --> RESTA\n 3 --> MULTIPLICA\n 4 --> DIVIDE"
+				+ "\n 5 --> POTENCIACION (A^B)\n 6 --> RADICACION (Raiz B de A)");
 		
 		opcion=scnIngreso.nextInt();
 		
@@ -33,6 +33,11 @@ public class ejemploSumaResta {
 			
 		case 5:
 			r= Math.pow(a, b);
+			break;
+			
+		case 6:
+			//RADICACION EN GENERAL
+			r=Math.pow(a, (1.0/b)); 
 			break;
 			
 		default:
